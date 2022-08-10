@@ -1,0 +1,51 @@
+.close,
+.comment,
+.gift,
+.plus {
+	padding: 0;
+}
+
+.modal__gift {
+	display: none;
+}
+
+.modal__comment,
+.modal__plus {
+	margin-left: 15px;
+}
+
+.btn__icon {
+	width: initial;
+}
+
+.close {
+	cursor: pointer;
+	width: 25px;
+	height: 25px;
+}
+
+.youtube {
+	height: 14px;
+	margin-right: 4px;
+}
+
+@media screen and (min-width: 768px) {
+	.youtube {
+		height: 22px;
+		margin-right: 8px;
+	}
+
+	.modal__gift {
+		display: initial;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.close {
+		width: 16px;
+		height: 16px;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	}
+}

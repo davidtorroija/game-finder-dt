@@ -1,0 +1,9 @@
+.platform__icon {
+	margin-right: 13px;
+	height: 100%;
+	flex-shrink: 0;
+}
+
+.platform__icon:last-child {
+	margin: 0;
+}

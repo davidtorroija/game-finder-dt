@@ -1,0 +1,22 @@
+.modal {
+	display: initial;
+	position: fixed;
+	top: 104px;
+	left: 0;
+	overflow-y: auto;
+	height: calc(100% - 104px);
+	width: 100%;
+	z-index: 3;
+}
+
+.modal--hidden {
+	display: none;
+}
+
+@media screen and (min-width: 768px) {
+	div.modal {
+		height: calc(100% - 120px);
+		top: 120px;
+		z-index: 6;
+	}
+}

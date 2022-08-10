@@ -1,0 +1,31 @@
+.divider {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.divider p {
+	margin: 0;
+	width: 61px;
+	height: 19px;
+	font-size: 14px;
+	line-height: 19px;
+	text-align: center;
+	color: var(--white);
+}
+
+.divider__line {
+	width: 89px;
+	height: 9px;
+	border-bottom: 1px solid var(--white);
+}
+
+@media screen and (min-width: 768px) {
+	.divider {
+		margin-top: 0;
+	}
+	.divider__line {
+		width: 134px;
+	}
+}

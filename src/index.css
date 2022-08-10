@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap");
+
+:root {
+    --white: #fff;
+    --black: #141414;
+    --darkgrey: #303030;
+    --lightgrey: #8f8f8f;
+    --darkgreen: #2bb34f;
+    --lightgreen: #7cd235;
+    --red: #e07979;
+    --gradient: linear-gradient(
+        180deg,
+        var(--lightgreen) 0%,
+        var(--darkgreen) 100%
+    );
+    /* Main */
+    --midgrey: #515151;
+    --searchTextgrey: #a6a6a6;
+    --searchTextEnabledAndHoverGrey: #888889;
+    --lightgrey2: #f1f1f1;
+    /* Cards */
+    --darkGreyCardAtt: #3d3d3d;
+    --greyCardAtt: #939393;
+    --gradientGreen: linear-gradient(180deg, #7cd235 0%, #2bb34f 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif !important;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Open Sans", sans-serif !important;
+    color: var(--white) !important;
+    background-color: var(--black) !important;
+}
+
+.--hidden {
+    display: none !important;
+}
+
+p::-moz-selection,
+input::-moz-selection,
+a::-moz-selection,
+h1::-moz-selection,
+strong::-moz-selection {
+    background: var(--lightgreen);
+}
+
+p::selection,
+input::selection,
+a::selection,
+h1::selection,
+strong::selection {
+    background: var(--lightgreen);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--darkgrey);
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background: var(--gradient);
+}
+
+.overflow--hidden {
+    overflow: hidden;
+}

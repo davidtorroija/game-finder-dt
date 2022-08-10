@@ -1,0 +1,28 @@
+.cardlist__container {
+	flex: 1;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: center;
+	margin-left: 0px;
+}
+
+@media screen and (min-width: 768px) {
+	.cardlist__container {
+		margin: 0 35px;
+		justify-content: left;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.cardlist__container {
+		margin-left: 263px;
+		margin-right: 0;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.cardlist__container {
+		margin-right: 30px;
+	}
+}

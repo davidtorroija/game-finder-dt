@@ -1,0 +1,37 @@
+.navitem {
+	padding-top: 11px;
+	display: flex;
+	align-items: baseline;
+}
+
+.navitem a {
+	text-decoration: none;
+	color: var(--white);
+	font-size: 22px;
+	line-height: 30px;
+}
+
+.navitem a:visited {
+	color: var(--white);
+}
+
+.navitem a:active,
+.navitems__activelink {
+	color: var(--lightgreen) !important;
+}
+
+.navitem:hover .st0,
+.navitem:hover a {
+	fill: var(--lightgreen);
+	color: var(--lightgreen);
+}
+
+.navitems--bold {
+	font-weight: 800;
+}
+
+.navbar__icon {
+	fill: var(--white);
+	height: 16px;
+	margin-right: 13px;
+}

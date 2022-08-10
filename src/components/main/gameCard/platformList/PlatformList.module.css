@@ -1,0 +1,13 @@
+.icons {
+	display: flex;
+}
+
+@media screen and (min-width: 320px) {
+	.card__icons {
+		max-width: 70px;
+		height: 13px;
+		overflow: hidden;
+		display: flex;
+		flex-shrink: 0;
+	}
+}

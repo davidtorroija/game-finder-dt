@@ -1,0 +1,147 @@
+* {
+    --borderColor: #979797;
+    --modalInfoTitles: #939393;
+    --transparentGrey: rgba(48, 48, 48, 0.7);
+    --transparentBorderGrey: rgba(48, 48, 48, 0.8);
+}
+
+.--small {
+    font-size: 12px;
+}
+.--extra-small {
+    font-size: 7px;
+}
+
+.--bold {
+    font-size: 18px;
+    text-align: left;
+    font-weight: 800;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+    padding: 8px;
+    color: var(--white);
+    min-height: 50px;
+    min-width: 108px;
+    line-height: 17px;
+}
+
+.btn:hover {
+    color: var(--white);
+}
+
+.btn:focus:not(:focus-visible),
+.btn:focus:focus-visible,
+.btn:focus-visible {
+    color: var(--white);
+    box-shadow: none;
+    outline: 1px solid var(--white);
+    box-shadow: none;
+}
+
+.btn--grey {
+    min-height: 40px;
+    min-width: 141px;
+    background-color: var(--midgrey);
+}
+
+.btn--green {
+    background: var(--gradient);
+}
+
+.btn--green:hover {
+    background: var(--lightgreen);
+}
+
+.btn--green:focus {
+    background: var(--gradient);
+    box-shadow: 0px 22px 10px -14px #2bb34fa1 inset;
+}
+
+.btn--long {
+    width: 100%;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--white);
+}
+
+.btn--buy {
+    background: none;
+    border: solid 1px var(--borderColor);
+}
+
+.btn--buy,
+.btn--wish {
+    width: 108px;
+    justify-content: space-between;
+}
+
+.btn.btn--youtube {
+    position: absolute;
+    bottom: 16px;
+    right: 5px;
+    background-color: var(--transparentGrey);
+    padding: 0 5px;
+    height: 20px;
+    min-height: initial;
+    min-width: initial;
+    border: solid 1px var(--transparentBorderGrey);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+
+    .--extra-small {
+        font-size: 12px;
+    }
+
+    .btn {
+        padding: 12px 9px;
+        width: initial;
+    }
+
+    .btn.btn--youtube {
+        padding: 0 8px;
+        right: 10px;
+        bottom: 22px;
+    height: 30px;
+
+    }
+
+    .btn--buy {
+        margin-right: 20px;
+        padding: 8px 15px 8px 20px;
+        height: 50px;
+        width: 125px;
+    }
+
+    .btn--comment {
+        margin-right: 24px;
+    }
+
+    .btn--long {
+        width: 141px;
+    }
+
+    .btn--wish {
+        padding: 0 10px;
+        width: 151px;
+    }
+
+    .gift {
+        display: initial;
+        margin-left: 8px;
+    }
+}

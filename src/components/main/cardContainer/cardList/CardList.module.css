@@ -1,0 +1,83 @@
+.cardlist--horizontal,
+.cardlist--vertical {
+	width: 100%;
+	margin-top: 30px;
+	margin-left: 0px;
+	padding: 0px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.cardlist--horizontal ul,
+.cardlist--vertical ul {
+	list-style-type: none;
+	width: 100%;
+	padding: 0px;
+	display: grid;
+	gap: 24px;
+}
+
+.cardlist--vertical {
+	justify-content: center;
+}
+
+/*------------class for skeleton loader--------------------*/
+
+.cardlist--horizontal .card__placeholder {
+	height: 320px;
+	animation: skeleton-card 0.5s linear infinite alternate;
+}
+
+.cardlist--vertical .card__placeholder {
+	padding-right: 40px;
+}
+
+@keyframes skeleton-card {
+	0% {
+		background-color: var(--black);
+	}
+
+	100% {
+		background-color: var(--darkgrey);
+	}
+}
+
+/*----------------------------------------------------------*/
+
+@media screen and (min-width: 321px) {
+	.cardlist--horizontal .card__placeholder {
+		height: 314px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.cardlist--horizontal .card__placeholder {
+		border-radius: 10px;
+		height: 314px;
+		animation: skeleton-card 0.5s linear infinite alternate;
+	}
+	.cardlist--vertical .card__placeholder {
+		width: 100%;
+		height: 538px;
+		border-radius: 10px;
+		padding-right: 40px;
+	}
+
+	.cardlist--horizontal ul {
+		grid-template-columns: repeat(auto-fill, minmax(331px, 333px));
+		justify-content: center;
+	}
+	.cardlist--vertical ul {
+		grid-template-columns: repeat(1, 100%);
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.cardlist--vertical ul {
+		grid-template-columns: repeat(1, 696px);
+		justify-content: center;
+	}
+	.cardlist--horizontal ul {
+		grid-template-columns: repeat(auto-fill, minmax(331px, 363px));
+	}
+}

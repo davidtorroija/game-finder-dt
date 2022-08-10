@@ -1,0 +1,77 @@
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	box-shadow: 0 0 0 30px inset var(--darkgrey);
+}
+
+input:-webkit-autofill {
+	-webkit-text-fill-color: var(--lightgrey) !important;
+}
+
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	-webkit-text-fill-color: var(--white) !important;
+}
+
+.formfield__field,
+.formfield__field--error {
+	background-color: transparent;
+	border: none;
+	border-left: 1px solid var(--lightgrey);
+	font-size: 14px;
+	line-height: 19px;
+	color: var(--lightgrey);
+	height: 50.2px;
+	width: 186px;
+	position: relative;
+	top: -0.5px;
+	border-radius: 0 8px 8px 0;
+	padding-left: 20px;
+}
+
+.formfield__field::placeholder,
+.formfield__field:focus::placeholder,
+.formfield__field:active::placeholder,
+.formfield__field--error:focus::placeholder,
+.formfield__field--error:active::placeholder {
+	color: var(--lightgrey);
+}
+
+.formfield__field--error,
+.formfield__field--error:-webkit-autofill,
+.formfield__field--error::placeholder {
+	border-color: var(--red);
+	color: var(--red);
+	-webkit-text-fill-color: var(--red) !important;
+}
+
+.formfield__field:focus,
+.formfield__field--error:focus {
+	border-color: var(--white);
+	color: var(--white);
+	outline: none;
+}
+
+.formfield__field:active,
+.formfield__field--error:active {
+	border-color: var(--white);
+	color: var(--white);
+	outline: none;
+}
+
+@media screen and (min-width: 768px) {
+	.formfield__field,
+	.formfield__field--error {
+		top: 0;
+		width: 278px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.formfield__field,
+	.formfield__field--error {
+		top: -0.5px;
+	}
+}

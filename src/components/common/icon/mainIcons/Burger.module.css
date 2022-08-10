@@ -1,0 +1,14 @@
+.navbar__burger,
+.header__burger {
+	cursor: pointer;
+	display: inline-block;
+	height: 22.5px;
+	width: 27.5px;
+	margin: 8px 0px 0px 0px;
+}
+
+@media screen and (min-width: 768px) {
+	.navbar__burger {
+		display: none;
+	}
+}

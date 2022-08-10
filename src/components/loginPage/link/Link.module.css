@@ -1,0 +1,22 @@
+a {
+	cursor: pointer;
+}
+.form__anchors,
+.form__anchors:visited {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 19px;
+	color: var(--white);
+	text-decoration: none;
+}
+
+.form__anchors:hover,
+.form__anchors:focus {
+	color: var(--lightgreen);
+	outline: none;
+}
+
+.form__anchors:active {
+	color: var(--darkgreen);
+}

@@ -1,0 +1,24 @@
+.cardlist__display rect {
+	fill: #303030;
+}
+
+.cardlist__display,
+.cardlist__display--selected {
+	cursor: pointer;
+	width: 40px;
+	margin: 0px 0px 0px 24px;
+}
+
+.cardlist__display--horizontal {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.cardlist__display:hover rect,
+.cardlist__display--selected:hover rect {
+	fill: #7d7d7d;
+}
+
+.cardlist__display--selected rect {
+	fill: #515151;
+}

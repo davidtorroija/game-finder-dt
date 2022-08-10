@@ -1,0 +1,38 @@
+.pl-5 {
+	padding-left: 5px;
+}
+
+.mr-2 {
+	margin-right: 2px;
+}
+
+.tag {
+	background-color: var(--white);
+	width: 108px;
+	height: 27px;
+	color: var(--black);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.tag__text--em {
+	color: var(--darkgreen);
+	font-size: 20px;
+	font-weight: 800;
+}
+
+@media screen and (min-width: 768px) {
+	.tag {
+		padding: 0 9px;
+		width: initial;
+	}
+
+	.tag:first-child {
+		padding: 0 15px 0 15.5px;
+	}
+
+	.mx-20 {
+		margin: 0 20px;
+	}
+}

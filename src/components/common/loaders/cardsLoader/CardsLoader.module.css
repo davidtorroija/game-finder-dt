@@ -1,0 +1,19 @@
+.cardlist--horizontal .card__placeholder {
+	background-color: var(--darkgrey);
+	width: 100%;
+	border: none;
+	border-radius: 0;
+	cursor: pointer;
+	justify-content: space-between;
+	height: 314px;
+}
+
+.cardlist--vertical .card__placeholder {
+	background-color: var(--darkgrey);
+	width: 100%;
+	border: none;
+	border-radius: 0;
+	cursor: pointer;
+	justify-content: space-between;
+	height: 314px;
+}

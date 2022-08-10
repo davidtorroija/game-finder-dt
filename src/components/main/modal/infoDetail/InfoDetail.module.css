@@ -1,0 +1,38 @@
+F .--underlined {
+	text-decoration: underline;
+}
+.info {
+	margin-bottom: 20px;
+}
+
+.info__content {
+	font-size: 12px;
+	font-weight: 300;
+	color: var(--white);
+	width: 150px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.info__title {
+	color: var(--modalInfoTitles);
+	margin-bottom: 4px;
+	font-size: 12px;
+	font-weight: 300;
+}
+
+.info__content:hover {
+	color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+	.info {
+		width: 50%;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.info__content {
+		margin-right: 50px;
+	}
+}

@@ -1,0 +1,9 @@
+.input__icon,
+.input__icon--error {
+	margin: 16px;
+	fill: var(--lightgrey);
+}
+
+.input__icon--error {
+	fill: var(--red);
+}

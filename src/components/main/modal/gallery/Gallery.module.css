@@ -1,0 +1,46 @@
+.gallery {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.gallery__img,
+.gallery__img--last {
+	aspect-ratio: 1.77 / 1;
+	width: 48%;
+	height: fit-content;
+	margin-bottom: 10px;
+	position: relative;
+	cursor: pointer;
+}
+
+.gallery__img:first-child,
+.gallery__img--first {
+	width: 100%;
+	aspect-ratio: 1.77 / 1;
+	position: relative;
+}
+
+.btn.btn--youtube {
+	position: absolute;
+	bottom: 16px;
+	right: 10px;
+	background-color: var(--transparentGrey);
+	height: 30px;
+	padding: 0 8px;
+	min-height: initial;
+	border: solid 2px var(--transparentBorderGrey);
+	border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+	.gallery__img {
+		margin-bottom: 16px;
+	}
+
+	.btn.btn--youtube {
+		bottom: 16px;
+	}
+}

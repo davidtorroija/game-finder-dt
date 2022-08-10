@@ -1,0 +1,268 @@
+.gameData {
+	padding-top: 10px;
+	position: absolute;
+	bottom: 0;
+	background: var(--darkgrey);
+	width: 100%;
+	margin: 0;
+	height: 147px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.gameData--list {
+	height: 205px;
+	padding-top: 20px;
+}
+
+.gameData__propertiesContainer__title {
+	width: 100%;
+	text-align: start;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	height: 31px;
+	overflow: hidden;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 23px;
+	line-height: 31px;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.gameData__propertiesContainer {
+	height: 150px;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	height: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin: 0 40px;
+}
+
+.gameData__propertiesContainer__props {
+	min-width: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.gameData__propertiesContainer__props h6 {
+	font-style: normal;
+	text-align: start;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 16px;
+	border-bottom: 1px solid var(--darkGreyCardAtt);
+	color: var(--greyCardAtt);
+	margin-bottom: 6.5px;
+	padding-bottom: 2.5px;
+}
+
+.gameData__propertiesContainer__props h6:nth-child(even) {
+	text-align: end;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.iconsContainer {
+	margin-top: 0;
+	margin-left: 40px;
+	margin-right: 40px;
+	height: 30px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 17px;
+}
+
+.iconsContainer .platformIcon {
+	margin: 1px 1px;
+	float: left;
+	height: 13px;
+	width: 17px;
+}
+
+.gameData__propertiesContainer__number {
+	margin-bottom: 0;
+	color: var(--darkgreen);
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.iconsContainer img {
+	width: 60px;
+	height: 13px;
+}
+
+.giftBtn {
+	border: none;
+	position: relative;
+	outline: none;
+	background: var(--gradientGreen);
+	width: 47px;
+	height: 24px;
+	border-radius: 10px;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	box-sizing: border-box;
+	padding: 0 10px;
+}
+
+.gameData__propertiesContainer__props--toggle .info {
+	color: var(--white);
+}
+
+@media screen and (min-width: 321px) {
+	.gameData {
+		height: 100px;
+		flex-direction: row;
+		padding-left: 0;
+		padding-right: 0;
+		width: 100%;
+	}
+
+	.gameData--list {
+		height: 205px;
+	}
+
+	.gameData__propertiesContainer {
+		height: 100%;
+		width: 65%;
+		margin-left: 20px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		align-items: flex-start;
+		margin-right: 0;
+	}
+
+	.gameData__propertiesContainer__title {
+		margin-right: 10px;
+		margin-bottom: 3px;
+	}
+
+	.gameData__propertiesContainer__props {
+		min-width: 150px;
+		width: 100%;
+	}
+
+	.gameData__propertiesContainer__props h6 {
+		font-style: normal;
+		text-align: start;
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 16px;
+		border-bottom: 1px solid var(--darkGreyCardAtt);
+		color: var(--greyCardAtt);
+	}
+
+	.gameData__propertiesContainer__props h6:nth-child(even) {
+		text-align: end;
+		display: block;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	.iconsContainer {
+		margin-top: 10px;
+		height: 71px;
+		width: fit-content;
+		margin-right: 20px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-items: flex-end;
+		justify-content: space-between;
+	}
+
+	.iconsContainer svg {
+		float: right;
+	}
+
+	.icons {
+		margin-left: 10px;
+	}
+
+	.iconsContainer img {
+		width: 60px;
+		height: 13px;
+	}
+
+	.giftBtn {
+		border: none;
+		position: relative;
+		outline: none;
+		background: var(--gradientGreen);
+		width: 47px;
+		height: 24px;
+		border-radius: 10px;
+
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-evenly;
+		flex-wrap: nowrap;
+	}
+
+	.marg-l-40 {
+		margin-left: 40px;
+	}
+
+	#plusIcon {
+		width: 15px;
+		height: 15px;
+	}
+
+	#giftIcon {
+		width: 16px;
+		height: 15px;
+	}
+
+	/******Toggles*****************/
+
+	.gameData__propertiesContainer--toggle {
+		justify-content: flex-start;
+	}
+
+	.gameData__propertiesContainer__props--toggle {
+		grid-template-columns: repeat(4, 1fr);
+		max-width: 350px;
+		margin-top: 17px;
+	}
+
+	.gameData__propertiesContainer__number--toggle {
+		position: absolute;
+		width: 35px;
+		right: 210px;
+		top: 70px;
+	}
+
+	.iconsContainer--toggle {
+		margin-top: 8px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.iconsContainer--toggle {
+		height: 58px;
+		margin-top: 10px;
+		margin-bottom: 0;
+	}
+}

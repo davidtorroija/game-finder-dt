@@ -1,0 +1,250 @@
+.mr-2 {
+	margin-right: 2px;
+}
+
+.modal__icons {
+	max-width: 80%;
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+	height: 20px;
+}
+
+div::selection,
+h2::selection {
+	background: var(--lightgreen);
+}
+
+.container {
+	display: flex;
+	padding: 0;
+	max-width: unset;
+}
+
+div.modal__container {
+	display: flex;
+	width: auto;
+	height: fit-content;
+	flex-direction: column;
+	background-color: var(--darkgrey);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	padding: 26px 40px;
+	color: var(--white);
+	z-index: 1;
+}
+
+.modal__container__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	width: 100%;
+	height: 25px;
+	margin-bottom: 14px;
+}
+
+.modal__container__title {
+	font-weight: 800;
+	font-size: 40px;
+	font-style: normal;
+	margin-bottom: 36px;
+}
+
+.modal__container__tagsContainer,
+.modal__container__buttonsContainer {
+	height: 108px;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.modal__container__buttonsContainer {
+	align-items: flex-end;
+}
+
+.modal__container__description {
+	font-size: 14px;
+	line-height: 19px;
+	margin: 32px 0;
+	max-height: 187px;
+	overflow: auto;
+}
+.modal__container__longButtonsContainer {
+	display: flex;
+	flex-direction: column;
+	height: 104px;
+	justify-content: space-between;
+	margin-bottom: 32px;
+	flex-shrink: 0;
+}
+
+.modal__container__infoContainer {
+	display: flex;
+	flex-direction: column;
+}
+
+svg.btn__icon {
+	margin-left: 15px;
+	width: initial;
+}
+
+.modal__gallery {
+	margin-bottom: 22.37px;
+}
+
+@media screen and (min-width: 768px) {
+	.px-15 {
+		padding: 0 15px;
+	}
+
+	.container {
+		flex-direction: column;
+		grid-column: 1 / 3;
+	}
+
+	div.modal__container {
+		display: grid;
+		grid-template-columns: 324px 384px;
+		grid-template-rows: repeat(4, auto) 72px auto;
+		padding: 39px 30px;
+		top: 0;
+		z-index: 2;
+		min-height: 100%;
+		width: 100%;
+		box-sizing: border-box;
+		justify-content: space-between;
+	}
+
+	.modal__container__header {
+		margin-bottom: 4px;
+		align-items: flex-start;
+		grid-column: 1 / 3;
+	}
+
+	.modal__container__title {
+		font-size: 60px;
+		margin-bottom: 44px;
+		grid-column: 1 / 3;
+		text-align: inherit;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	.modal__container__tagsContainer,
+	.modal__container__buttonsContainer {
+		height: initial;
+		width: 100%;
+		flex-direction: row;
+		justify-content: flex-start;
+		grid-column: 1 / 3;
+	}
+
+	.modal__container__tagsContainer {
+		margin-bottom: 32px;
+	}
+
+	.modal__container__description {
+		width: 570px;
+		max-height: 95px;
+		overflow: auto;
+		grid-column: 1 / 3;
+	}
+
+	.modal__container__longButtonsContainer {
+		flex-direction: row;
+		justify-content: start;
+		height: 40px;
+		grid-row-start: 5;
+	}
+
+	.modal__container__infoContainer {
+		height: 230px;
+		flex-wrap: wrap;
+		width: 100%;
+		flex-direction: row;
+		justify-content: space-between;
+		grid-row-start: 6;
+	}
+
+	.info {
+		margin-right: 15px;
+		max-width: 50%;
+	}
+
+	.infoContent {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	.modal__gallery {
+		grid-row: 5 / 7;
+		grid-column: 2 / 3;
+		width: 100%;
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	div.modal__container {
+		margin: 0 60px;
+		padding: 34px 40px 20px 40px;
+		min-height: unset;
+		width: calc(100% - 120px);
+		max-width: 1082px;
+		z-index: 2;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 10px;
+		position: fixed;
+		top: 50vh;
+		left: 50vw;
+		transform: translate(-50%, -50%);
+		grid-template-columns: 468px 336px;
+		justify-content: space-between;
+	}
+
+	.modal__container__header {
+		margin-bottom: 9px;
+		height: 20px;
+	}
+
+	.container,
+	.modal__container__description,
+	.modal__container__longButtonsContainer,
+	.modal__container__infoContainer {
+		grid-column: 1 / 2;
+	}
+
+	.modal__container__description {
+		width: 100%;
+		max-width: 468px;
+		height: 95px;
+		overflow: auto;
+	}
+
+	.modal__gallery {
+		grid-row: 3 /7;
+		grid-column: 2 / 3;
+	}
+
+	.modal__container__infoContainer {
+		align-content: flex-start;
+	}
+
+	.info {
+		margin-right: 51px;
+		max-width: 100%;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	div.modal__container {
+		grid-template-columns: 468px 384px;
+		padding: 34px 91px 40px 79px;
+		width: 1082px;
+	}
+}

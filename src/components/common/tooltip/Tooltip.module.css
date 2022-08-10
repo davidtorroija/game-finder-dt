@@ -1,0 +1,28 @@
+.infoTooltipText {
+	visibility: visible;
+	background-color: var(--black);
+	color: #fff;
+	text-align: center;
+	padding: 5px;
+	border-radius: 6px;
+	position: absolute;
+	z-index: 1;
+	white-space: pre-wrap;
+	text-align: start;
+	font-size: 12px;
+	inset: 0px auto auto 0px;
+	z-index: 6;
+}
+
+.infoTooltipText::after {
+	width: 1px;
+	height: 1px;
+	content: " ";
+	position: absolute;
+	bottom: 95%;
+	right: 50%;
+	margin-left: 16px;
+	border-bottom: solid 7px;
+	border-style: solid;
+	border-color: transparent transparent var(--black) transparent;
+}

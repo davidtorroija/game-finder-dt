@@ -1,0 +1,4 @@
+.header__search {
+  fill: var(--searchTextgrey);
+  width: 16px;
+}

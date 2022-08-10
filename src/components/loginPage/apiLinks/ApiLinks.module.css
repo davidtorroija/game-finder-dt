@@ -1,0 +1,62 @@
+.apianchor__container {
+	cursor: pointer;
+	border: none;
+	border-radius: 8px;
+	box-sizing: border-box;
+	height: 40px;
+	width: 240px;
+	margin-top: 20px;
+	align-self: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.apianchor__container:focus-within {
+	filter: drop-shadow(2px 2px 0px var(--white));
+}
+
+.facebook__container {
+	background-color: #263c68;
+}
+
+.twitter__container {
+	background-color: #0695cb;
+}
+
+.google__container {
+	background-color: #9d9d9d;
+}
+
+.apianchor__anchor,
+.apianchor__anchor:hover {
+	cursor: pointer;
+	text-align: center;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 16px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: var(--white);
+	border-radius: 0 8px 8px 0;
+	box-sizing: border-box;
+	height: 40px;
+	width: 190px;
+	padding: 13px 13px 10px 8px;
+}
+
+.apianchor__anchor:focus {
+	outline: none;
+}
+
+.facebook__anchor {
+	background-color: #3b5998;
+}
+
+.twitter__anchor {
+	background-color: #00aced;
+}
+
+.google__anchor {
+	background-color: #c7c7c7;
+}

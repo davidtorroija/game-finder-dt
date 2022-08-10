@@ -1,0 +1,37 @@
+.imgOverlay,
+.imgOverlay__textContainer {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: calc(100% - 10px);
+	display: flex;
+	align-items: center;
+}
+
+.imgOverlay {
+	background-color: #2d2d2d;
+	opacity: 0.7;
+	font-size: 12px;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.imgOverlay__textContainer {
+	flex-direction: column;
+	justify-content: center;
+	line-height: 7px;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+	.imgOverlay__textContainer {
+		justify-content: flex-start;
+		margin-top: 17.368%;
+	}
+
+	.imgOverlay,
+	.imgOverlay__textContainer {
+		height: calc(100% - 16px);
+	}
+}

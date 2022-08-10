@@ -1,0 +1,39 @@
+.carousel__container {
+	display: none;
+}
+
+@media screen and (min-width: 1440px) {
+	.carousel__container {
+		display: flex;
+		border-radius: 0px 10px 10px 0px;
+		overflow: hidden;
+		width: 453px;
+		height: 660px;
+		position: relative;
+	}
+
+	.carousel__container img {
+		object-fit: fill;
+		width: 454px;
+		height: 660px;
+	}
+
+	.swiper-pagination {
+		margin-bottom: 35px;
+	}
+
+	.swiper-pagination > .swiper-pagination-bullet {
+		cursor: pointer;
+		width: 8px;
+		height: 8px;
+		opacity: 0.3;
+		border-radius: 50%;
+		background-image: url(../../../assets/images/carouselRadioButton.svg);
+		background-position: center;
+		margin-bottom: 40px;
+	}
+
+	.swiper-pagination > .swiper-pagination-bullet-active {
+		opacity: 1;
+	}
+}
